@@ -1,0 +1,184 @@
+/* Additional bootstrap variables */
+
+///////////////////////////////////////////////
+// Extra large screen
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-xlg:        1600px;
+@screen-xlg-min:    @screen-xlg;
+@screen-lg-max:     (@screen-xlg - 1);
+///////////////////////////////////////////////
+/*Global stuff*/  
+@border-radius-base: 0px;
+
+///////////////////////////////////////////////
+// Text colors
+// Internal
+@color-bluegreen: #11958b;
+@color-black: #343434; // main text
+@color-white: #ffffff;
+@color-white--darker: #f2f2f2;
+
+@color-gray: #c8c7c7; // light gray socials inactve
+@color-gray-2: #555555; // resume edu header
+@color-gray-3: #8a8a8a; // edu dates
+@color-gray-4: #565656; // edu text
+@color-gray-5: #b3b3b3; // form placeholders
+@color-gray-6: #e1e1e1; // separator hr
+@color-gray-7: #d0d0d0; // separator testemonials
+@color-gray-8: #dadada; // progress skill
+@color-gray-9: #f7f7f7; // all small middle cards
+@color-gray-10: #f2f2f2; // top and bottom
+@color-gray-11: #3f3f3f; // modal text
+
+
+@box-shadow-main:  0px 5px 8px 0px rgba(0, 0, 0, 0.14);
+
+// Global
+  @color-main-theme: @color-bluegreen;
+
+  // Navs
+  @color-nav-main: @color-white;
+  @color-nav-main--hover: @color-bluegreen;
+  @color-nav-main--expanded: @color-white;
+  @color-bg-nav--expanded: rgba(0,0,0,0.85);
+
+  // BGs
+  @color-front-bg: @color-gray-10;
+  @color-contacts-bg: @color-gray-10;
+  @color-cards-bg: @color-gray-9;
+  @color-card-contacts: @color-white;
+  @color-card-hello: @color-white;
+
+  // Elements
+  @color-separator-about: @color-gray-6;
+  @color-separator-testemonials: @color-gray-7;
+
+  @color-progress-skill: @color-gray-8;
+  @color-portfolio-border: @color-bluegreen;
+  @color-portfolio-icon--on-hover: @color-white;
+
+  @color-soc-icon-bg: @color-gray;
+  @color-soc-icon: @color-white;
+
+  @color-review-btn--noncolored: @color-white;
+
+  // Plain Text
+  @color-hello-card-text: @color-black;
+
+  @color-review-project: @color-bluegreen;
+  @color-review-reviewer: @color-gray-2;
+
+  @color-resume-edu-text: @color-gray-4;
+  @color-resume-edu-date: @color-gray-3;
+  @color-resume-edu-header: @color-gray-2;
+  @color-resume-edu-subheader: @color-bluegreen;
+
+  @color-contacts-header: @color-gray-2;
+
+  // Links
+  @color-cards-links: @color-black;
+
+  // Modals and forms
+  @modal-content-bg: @color-white;
+  @color-modal-text: @color-gray-11;
+
+  @color-form-placeholder: @color-gray-5;
+
+  // Bootstrap color vars
+  @text-color: @color-black; // main body color
+  @body-bg: @color-white; // main body background
+
+///////////////////////////////////////////////
+// Sizes and paddings
+@default_big_padding: 50px;
+@default_small_padding: @default_big_padding/2;
+@bar_height: 4px;
+@inter_block_distance: 65px;
+
+///////////////////////////////////////////////
+//Typography
+@font-family-sans-serif:  "Inconsolata", Helvetica, Arial, sans-serif;
+@font-family-serif:       Roboto, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+@font-size-base:  17px;
+@small_font_size: 15px;
+@form-font-size: 14px;
+
+@line_height_paragraph: 24px;
+
+///////////////////////////////////////////////
+// Forms
+
+
+///////////////////////////////////////////////
+//Buttons
+@btn-default-color: @color-main-theme;
+@btn-default-border: @color-main-theme;
+@btn-primary-bg: @color-main-theme;
+@btn-primary-border: @color-main-theme;
+
+@btn-font-weight: bold;
+@btn-border-radius-base: 0px;
+
+///////////////////////////////////////////////
+// Images paths
+@title_bg_img: url(../img/img_bg_bluegreen.jpg);
+
+
+// @button_car_left: url(../img/buttons/button_left_lightgreen.png);
+// @button_car_left_hover: url(../img/buttons/button_left_hover_lightgreen.png);
+// @button_car_right: url(../img/buttons/button_right_lightgreen.png);
+// @button_car_right_hover: url(../img/buttons/button_right_hover_lightgreen.png);
+// @title_bg_img: url(../img/img_bg_darkgreen.jpg);
+
+
+// @button_car_left: url(../img/buttons/button_left.png);
+// @button_car_left_hover: url(../img/buttons/button_left_hover.png);
+// @button_car_right: url(../img/buttons/button_right.png);
+// @button_car_right_hover: url(../img/buttons/button_right_hover.png);
+// @title_bg_img: url(../img/first_screen_bg.jpg);
+
+
+// @button_car_left: url(../img/buttons/button_left_blue.png);
+// @button_car_left_hover: url(../img/buttons/button_left_hover_blue.png);
+// @button_car_right: url(../img/buttons/button_right_blue.png);
+// @button_car_right_hover: url(../img/buttons/button_right_hover_blue.png);
+// @title_bg_img: url(../img/img_bg_watches.jpg);
+
+///////////////////////////////////////////////
+//Progress bar
+@progress-bar-bg: @color-main-theme;
+@progress_bar_height: 6px;
+
+///////////////////////////////////////////////
+//Modals
+@border-radius-large: 0px;
+
+///////////////////////////////////////////////
+//Resume responsive text align
+.text-xs-left { text-align: left; }
+.text-xs-right { text-align: right; }
+.text-xs-center { text-align: center; }
+.text-xs-justify { text-align: justify; }
+
+@media (min-width: @screen-sm-min) {
+    .text-sm-left { text-align: left; }
+    .text-sm-right { text-align: right; }
+    .text-sm-center { text-align: center; }
+    .text-sm-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-md-min) {
+    .text-md-left { text-align: left; }
+    .text-md-right { text-align: right; }
+    .text-md-center { text-align: center; }
+    .text-md-justify { text-align: justify; }
+}
+
+@media (min-width: @screen-lg-min) {
+    .text-lg-left { text-align: left; }
+    .text-lg-right { text-align: right; }
+    .text-lg-center { text-align: center; }
+    .text-lg-justify { text-align: justify; }
+}
